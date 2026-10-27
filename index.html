@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nama Kamu] — Frontend Developer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      color: #2d2d2d;
+      background: #fafafa;
+      padding: 2rem 1.25rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 span {
+      color: #6b6b6b;
+      font-weight: 400;
+    }
+
+    .intro {
+      color: #555;
+      font-size: 1.05rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 1rem;
+      color: #111;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul li strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: #111;
+    }
+
+    ul li p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tech span {
+      background: #111;
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    .contact a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .contact a:hover {
+      border-bottom-color: #111;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>[Nama Kamu] <span>— Frontend Developer & Open Source Contributor</span></h1>
+    <p class="intro">
+      Hi, I'm <strong>[Nama Kamu]</strong>, a developer at <strong>PolarNotion</strong>.
+      I enjoy building lightweight, interactive tools for the web—especially jQuery plugins
+      and CSS libraries that make everyday UI feel a little more fun.
+    </p>
+  </header>
+
+  <section>
+    <h2>🔧 What I've Built</h2>
+    <ul>
+      <li>
+        <strong>Turntable.js</strong>
+        <p>A responsive jQuery slider that lets you "flip" through images as your mouse or finger sweeps across the container. It's like a flipbook made with JavaScript.</p>
+      </li>
+      <li>
+        <strong>starwarsintro.css</strong>
+        <p>A pure CSS library that recreates the iconic Star Wars opening crawl with just one stylesheet and a few markup classes.</p>
+      </li>
+      <li>
+        <strong>Hamster Wheel</strong>
+        <p>An infinite page-scrolling jQuery plugin with autoscroll and configurable cloning options.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🛠️ Tech I Use</h2>
+    <div class="tech">
+      <span>JavaScript</span>
+      <span>jQuery</span>
+      <span>HTML/CSS</span>
+      <span>GitHub Pages</span>
+      <span>Open Source</span>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>📫 Find Me</h2>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/polarnotion" target="_blank" rel="noopener">github.com/polarnotion</a>
+      <br>
+      <strong>Live Demos:</strong>
+      <a href="https://polarnotion.github.io" target="_blank" rel="noopener">polarnotion.github.io</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> [Nama Kamu]. Built with plain HTML &amp; CSS.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
